@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="index.html"><img src="" class="logo">LOGO</a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="nav">
+                <li><a href="index.html"><img src="./image/home.png" class="icon"> Anasayfa</a></li>
+                <li><a href="upload.html"><img src="./image/upload.png" class="icon"> Fotoğraf Yükle</a></li>
+                <li><a href="create.html"><img src="./image/album.png" class="icon"> Albüm Oluştur</a></li>
+                <li><a href="login.html"><img src="./image/login.png" class="icon"> Giriş Yap</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>Fotoğraflarınızı Yükleyin ve Paylaşın</h2>
+                <p>
+                    Fotoğrafları sürükle-bırak seçeneği ile yükleyebilirsiniz.<br>
+                    Birden çok fotoğraf yükleyerek kendi albümünüzü oluşturabilirsiniz.
+                </p>
+                <a href="upload.html">YÜKLEMEYE BAŞLA</a>
+            </div>
+            <div class="img-box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./image/i1.jpg"></div>
+                        <div class="swiper-slide"><img src="./image/post.jpg"></div>
+                        <div class="swiper-slide"><img src="./image/cat.jpg"></div>
+                        <div class="swiper-slide"><img src="./image/door-bg.jpg"></div>
+                        <div class="swiper-slide"><img src="./image/view.jpg"></div>
+                    </div>  
+                    <div class="swiper-pagination"></div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

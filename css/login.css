@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(../image/signbg.jpg);
+    background-size: 100% 100%;
+}
+
+/*.background{
+    background-image: url(../image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+}*/
+
+.loginForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 450px;
+    padding: 60px 40px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: #000;
+    opacity: 0.9;
+}
+
+.loginForm h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff; 
+}
+
+.textBox{
+    position: relative;
+    margin: 30px 0px;
+    border-bottom: 2px solid #adadad;
+}
+
+.textBox input{
+    height: 40px;
+    width: 100%;
+    padding: 0px 5px;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.textBox span::before{
+    content: attr(data-placeholder);
+    color: #adadad;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.textBox span::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    margin-top: 40px;
+    right: 0px;
+    background: linear-gradient(120deg, #CD5C5C, #3F51B5);
+    transition: .5s;
+}
+
+.focus + span::before{
+    top: -5px;
+}
+
+.focus + span::after{
+    width: 100%;
+}
+
+.loginButton{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(135deg,	#CD5C5C, #000000, #3F51B5);
+    background-size: 200%;
+    border: none;
+    outline: none;
+    transition: .5s;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    cursor: pointer;
+}
+
+.loginButton:hover{
+    background-position: right;
+}
+
+.bottom-text{
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.bottom-text a{
+    color: #3F51B5;
+    font-weight: bold;
+    text-decoration: none;
+}
+

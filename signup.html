@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Oluşturma Formu</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <form action="" class="login-form" id="form">
+
+        <h1>Hesap Oluştur</h1>
+
+        <div class="text-box">
+            <input type="email" required>
+            <span data-placeholder="E-posta adresi"></span>
+        </div>
+        <div class="text-box">
+            <input type="text" required>
+            <span data-placeholder="Kullanıcı adı"></span>
+        </div>
+        <div class="text-box">
+            <input type="password" required>
+            <span data-placeholder="Şifre"></span>
+        </div>
+
+        <div class="agreed">
+            <input type="checkbox" class="agreed-text" name="agreed-text" value="agreed-text" required>
+            <a href="#">Şartlar</a> ve <a href="#">Gizlilik Politikası</a>'nı kabul
+            ediyorum.
+        </div>
+
+        <input type="submit" class="signup-btn" value="KAYDOL">
+
+        <div class="bottom-text">
+            Hesabınız var mı? <a href="login.html">Giriş Yap</a>
+        </div>
+
+    </form>
+
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

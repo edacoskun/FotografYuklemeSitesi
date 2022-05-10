@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #161616;
+}
+
+.title{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.drag{
+  border: 2px dashed #fff;
+  height: 400px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag.active{
+  border: 2px solid #3F51B5;
+}
+
+.drag .upload-icon{
+  color: #3F51B5;
+  font-size: 90px;
+}
+
+.drag header{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.drag span{
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 8px 0 20px 0;
+}
+
+.drag button{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  border: none;
+  outline: none;
+  background: linear-gradient(120deg, #CD5C5C, #3F51B5);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.drag img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.edit a{
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 230px;
+  padding: 10px 20px;
+  background: linear-gradient(120deg,#CD5C5C,#9400d3);
+  border-radius: 8px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer; 
+}
